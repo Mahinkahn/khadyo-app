@@ -1,16 +1,16 @@
 import React from 'react';
 
-const Service = ({service}) => {
-    const {name, description , img} = service;
+const Service = ({ service }) => {
+    const { name, description, img } = service;
     return (
-        <div className="card bg-base-100 shadow-xl">
-            <figure className="px-10 pt-10">
-                <img src={img} alt="Shoes" className="rounded-xl" />
-            </figure>
-            <div className="card-body items-center text-center">
-                <h2 className="card-title">{name}</h2>
-                <p>{description}</p>
+
+        <div className=" flex items-center mt-8  rounded-2xl   w-[370px] h-[135px]  border">
+            <img src={img} alt="Shoes" className=" px-5" />
+            <div className=" w-[230px] h-[56px]">
+                <h2 className="card-title font-serif font-bold">{name}</h2>
+                <p className=' mt-3'>{description}</p>
             </div>
+
         </div>
     );
 };

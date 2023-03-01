@@ -10,7 +10,7 @@ const InfoCards = () => {
 
 
     return (
-        <div className='grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ml-6'>
+        <div className='grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ml-6 mb-24'>
             <div className='mt-[-45px]'>
                 <h1 className=' text-4xl font-bold leading-normal font-serif  flex ml-9'>
                     <img src={Ellipse} alt="" className='w-[60px] h-[55px] mr-[-44px]' />
