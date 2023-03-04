@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../../assets/images/Header.png';
 import Vector from '../../../assets/images/Vector.png';
 import Group from '../../../assets/images/Group.png';
-import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
+
 
 const Banner = () => {
     return (
