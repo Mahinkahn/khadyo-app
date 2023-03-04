@@ -1,5 +1,4 @@
 import React from 'react';
-import chair from '../../../assets/images/chair.png';
 import Header from '../../../assets/images/Header.png';
 import Vector from '../../../assets/images/Vector.png';
 import Group from '../../../assets/images/Group.png';
