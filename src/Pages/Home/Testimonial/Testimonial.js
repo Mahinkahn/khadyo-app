@@ -7,6 +7,9 @@ import Ellipse from '../../../assets/images/Ellipse 9.png';
 import BG_Shape from '../../../assets/images/BG_Shape.png';
 import people2 from '../../../assets/images/people2.png';
 import people3 from '../../../assets/images/people3.png';
+import Rec from '../../../assets/images/Rec.png';
+import Seed from '../../../assets/images/Seed.png';
+import Vector2 from '../../../assets/images/Vector2.png';
 import Review from './Review';
 
 
@@ -58,14 +61,23 @@ const Testimonial = () => {
                     </div>
                 </div>
             </div>
-            <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-                {
-                    reviews.map(review => <Review
-                        key={review._id}
-                        review={review}
-                    >
-                    </Review>)
-                }
+            <div className='' style={{ backgroundImage: `url(${Rec})` }}>
+                <div className=' w-[1240px] mx-auto'>
+                    <img src={Seed} alt="" />
+                    <div className='flex justify-center'>
+                        <img src={Vector2} alt="" />
+                        <h3 className=' text-4xl font-serif font-bold'>Popular Products</h3>
+                    </div>
+                </div>
+                <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                    {
+                        reviews.map(review => <Review
+                            key={review._id}
+                            review={review}
+                        >
+                        </Review>)
+                    }
+                </div>
             </div>
         </section>
     );
