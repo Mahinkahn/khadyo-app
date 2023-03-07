@@ -1,12 +1,14 @@
 import React from 'react';
 import quote from '../../../assets/icons/quote.svg';
-import people1 from '../../../assets/images/people1.png';
+
 import Rectangl from '../../../assets/images/Rectangle 14.png';
 import bann from '../../../assets/images/bann.png';
 import Ellipse from '../../../assets/images/Ellipse 9.png';
 import BG_Shape from '../../../assets/images/BG_Shape.png';
-import people2 from '../../../assets/images/people2.png';
-import people3 from '../../../assets/images/people3.png';
+import people2 from '../../../assets/images/Image(1).png';
+import people5 from '../../../assets/images/Image(2).png';
+import people3 from '../../../assets/images/image-5.png';
+import people1 from '../../../assets/images/Imag1.png';
 import Rec from '../../../assets/images/Rec.png';
 import Seed from '../../../assets/images/Seed.png';
 import Vector2 from '../../../assets/images/Vector2.png';
@@ -20,28 +22,35 @@ const Testimonial = () => {
             _id: 1,
             name: 'Winson Herry',
             img: people1,
-            review: 'It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content',
+
             location: 'California'
         },
         {
             _id: 2,
             name: 'Winson Herry',
             img: people2,
-            review: 'It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content',
+
+            location: 'California'
+        },
+        {
+            _id: 3,
+            name: 'Winson Herry',
+            img: people5,
+
             location: 'California'
         },
         {
             _id: 3,
             name: 'Winson Herry',
             img: people3,
-            review: 'It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content',
+
             location: 'California'
         },
     ]
 
     return (
         <section className='my-16 mt-20'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[1400px] mx-auto ml-32'>
+            <div className=' relative mb-[-50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[1400px] mx-auto ml-32'>
                 <div className='w-[490px] h-[280px]'>
                     <img src={Rectangl} alt="" />
                 </div>
@@ -61,15 +70,21 @@ const Testimonial = () => {
                     </div>
                 </div>
             </div>
-            <div className='' style={{ backgroundImage: `url(${Rec})` }}>
-                <div className=' w-[1240px] mx-auto'>
-                    <img src={Seed} alt="" />
-                    <div className='flex gap-5 justify-center mt-[-50px]'>
-                        <img src={Vector2} alt="" className='mt-2' />
-                        <h3 className=' text-4xl font-serif font-bold'>Popular Products</h3>
+            <div className='relative' style={{
+                backgroundImage: `url(${Rec})`,
+                width: '1440px',
+                height: '783px',
+            }}>
+                <div className='absolute w-[1170px] ml-24'>
+                    <div className='mt-24'>
+                        <img src={Seed} alt="" className='' />
+                    </div>
+                    <div className='flex gap-6 mr-10 justify-center mt-[-50px]'>
+                        <img src={Vector2} alt="" className='mt-8' />
+                        <h3 className=' text-[50px] font-serif font-bold'>Popular Products</h3>
                     </div>
                 </div>
-                <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                <div className='absolute mt-11 ml-32  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[1110px] mx-auto'>
                     {
                         reviews.map(review => <Review
                             key={review._id}

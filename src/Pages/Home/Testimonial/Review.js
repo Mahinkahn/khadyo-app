@@ -1,14 +1,14 @@
 import React from 'react';
 
 const Review = ({ review }) => {
-    const { name, img, review: userReview, location } = review;
+    const { name, img, location } = review;
     return (
-        <div className="card shadow-xl mt-48">
-            <div className="card-body">
-                <p>{userReview}</p>
-                <div className="flex items-center mt-6">
-                    <div className="avatar mr-6">
-                        <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+        <div className="card shadow-xl bg-black mt-48 w-[255px] h-[398px]">
+            <div className="card-body items-center">
+
+                <div className="  mt-6">
+                    <div className="">
+                        <div className="w-full">
                             <img src={img} alt="" />
                         </div>
                     </div>
