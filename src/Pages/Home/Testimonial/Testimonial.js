@@ -1,7 +1,7 @@
 import React from 'react';
 import quote from '../../../assets/icons/quote.svg';
-
 import Rectangl from '../../../assets/images/Rectangle 14.png';
+import Group2 from '../../../assets/images/Group2.png';
 import bann from '../../../assets/images/bann.png';
 import Ellipse from '../../../assets/images/Ellipse 9.png';
 import BG_Shape from '../../../assets/images/BG_Shape.png';
@@ -22,28 +22,28 @@ const Testimonial = () => {
             _id: 1,
             name: 'Winson Herry',
             img: people1,
-
+            imga: Group2,
             location: 'California'
         },
         {
             _id: 2,
             name: 'Winson Herry',
             img: people2,
-
+            imga: Group2,
             location: 'California'
         },
         {
             _id: 3,
             name: 'Winson Herry',
             img: people5,
-
+            imga: Group2,
             location: 'California'
         },
         {
             _id: 3,
             name: 'Winson Herry',
             img: people3,
-
+            imga: Group2,
             location: 'California'
         },
     ]
