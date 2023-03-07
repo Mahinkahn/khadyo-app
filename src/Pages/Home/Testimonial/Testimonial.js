@@ -64,8 +64,8 @@ const Testimonial = () => {
             <div className='' style={{ backgroundImage: `url(${Rec})` }}>
                 <div className=' w-[1240px] mx-auto'>
                     <img src={Seed} alt="" />
-                    <div className='flex justify-center'>
-                        <img src={Vector2} alt="" />
+                    <div className='flex gap-5 justify-center mt-[-50px]'>
+                        <img src={Vector2} alt="" className='mt-2' />
                         <h3 className=' text-4xl font-serif font-bold'>Popular Products</h3>
                     </div>
                 </div>
