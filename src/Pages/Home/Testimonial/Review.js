@@ -24,7 +24,7 @@ const Review = ({ review }) => {
                     <div
                         class="absolute top-4 opacity-0 transition-opacity group-hover:relative ml-6 group-hover:opacity-100 "
                     >
-                        <div className='flex mt-3 w-[125px] h-[45px] bg-secondary rounded-2xl px-4 pt-2'>
+                        <div className='flex mt-3 w-[125px] h-[45px] bg-secondary rounded-2xl px-4 pt-3'>
                             <Link className=' text-white mt-1'><FaShoppingBag /></Link>
                             <Link className=''><img src={grp} alt="" className='' /></Link>
                             <Link className='mr-2 mt-1'><img src={arrow} alt="" className=' w-4' /></Link>
