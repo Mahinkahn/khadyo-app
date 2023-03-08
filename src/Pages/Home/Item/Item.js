@@ -10,14 +10,14 @@ const Item = () => {
                 <div className=' flex'>
                     <h1 className=' text-5xl font-serif font-bold leading-tight w-[182px]]'>Client <br />
                         Reviews</h1>
-                    <div className=' ml-[200px] mt-6  w-full absolute'>
+                    <div className=' mt-8 w-full relative'>
                         <img src={Vector4} alt="" />
                     </div>
-                    <div className='relative mt-[-20px] ml-[-50px]'>
+                    <div className=' absolute ml-44 mt-[-80px]'>
                         <img src={Ellipse} alt="" />
                     </div>
                 </div>
-                <div className=' flex'>
+                <div className=' flex mt-10 relative'>
                     <Link href="" class="-mb-px font-bold w-[50px] mr-3 btn  border rounded-full bg-white capitalize   text-sm  text-[#9B6842]  hover:bg-[#9B6842]  hover:text-white  focus:bg-[#9B6842]  focus:text-white  active:bg-[#9B6842]    ">
                         01
                     </Link>
@@ -27,7 +27,7 @@ const Item = () => {
                     <Link href="" class="-mb-px font-bold w-[50px] btn  border bg-white capitalize  rounded-full  text-sm  text-[#9B6842]  hover:bg-[#9B6842] hover:text-white  focus:bg-[#9B6842]  focus:text-white  active:bg-[#9B6842] ">
                         03
                     </Link>
-                    <div>
+                    <div className=' ml-[-150px] w-full'>
                         <img src={bag} alt="" />
                     </div>
                 </div>
