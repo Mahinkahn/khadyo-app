@@ -20,37 +20,37 @@ const Testimonial = () => {
     const reviews = [
         {
             _id: 1,
-            name: 'Winson Herry',
+            name: 'Metallic Coffee',
             img: people1,
             imga: Group2,
-            location: 'California'
+            location: 'With a similar flavor to black coffee, the americano'
         },
         {
             _id: 2,
-            name: 'Winson Herry',
+            name: 'Americano Coffee',
             img: people2,
             imga: Group2,
-            location: 'California'
+            location: 'With a similar flavor to black coffee, the americano'
         },
         {
             _id: 3,
-            name: 'Winson Herry',
+            name: 'Coffee Bag',
             img: people5,
             imga: Group2,
-            location: 'California'
+            location: 'With a similar flavor to black coffee, the americano'
         },
         {
             _id: 3,
-            name: 'Winson Herry',
+            name: 'Foil Food Packet',
             img: people3,
             imga: Group2,
-            location: 'California'
+            location: 'With a similar flavor to black coffee, the americano'
         },
     ]
 
     return (
         <section className='my-16 mt-20'>
-            <div className=' relative mb-[-50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[1400px] mx-auto ml-32'>
+            <div className=' relative mb-[-90px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[1400px] mx-auto ml-32'>
                 <div className='w-[490px] h-[280px]'>
                     <img src={Rectangl} alt="" />
                 </div>
@@ -75,16 +75,16 @@ const Testimonial = () => {
                 width: '1440px',
                 height: '783px',
             }}>
-                <div className='absolute w-[1170px] ml-24'>
-                    <div className='mt-24'>
+                <div className='absolute w-[1210px] ml-24'>
+                    <div className='mt-36'>
                         <img src={Seed} alt="" className='' />
                     </div>
-                    <div className='flex gap-6 mr-10 justify-center mt-[-50px]'>
+                    <div className='flex gap-6 mr-20 justify-center mt-[-60px]'>
                         <img src={Vector2} alt="" className='mt-8' />
                         <h3 className=' text-[50px] font-serif font-bold'>Popular Products</h3>
                     </div>
                 </div>
-                <div className='absolute mt-11 ml-32  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[1110px] mx-auto'>
+                <div className='absolute mt-20 ml-28  grid gap-x-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[1110px] mx-auto'>
                     {
                         reviews.map(review => <Review
                             key={review._id}
