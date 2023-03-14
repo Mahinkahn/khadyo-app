@@ -6,10 +6,11 @@ import Item from '../Item/Item';
 import MakeAppointment from '../MakeAppointment/MakeAppointment';
 import Services from '../Services/Services';
 import Testimonial from '../Testimonial/Testimonial';
+import homeCss from '../Home/Home.css'
 
 const Home = () => {
     return (
-        <div className='mx-5'>
+        <div className='home'>
             <Banner></Banner>
             <InfoCards></InfoCards>
             <Services></Services>

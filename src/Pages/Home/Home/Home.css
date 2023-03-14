@@ -1,0 +1,9 @@
+* {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    -webikit-scrollbar-display: none;
+    scroll-snap-align: center;
+}
