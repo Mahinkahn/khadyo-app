@@ -1,26 +1,23 @@
-.box {
-    width: 700px;
-    margin: 240px auto;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: lato;
-    text-align: center;
+.Rectangle {
+    animation: animate 2s infinite ease alternate;
 }
 
-.typed {
-    color: black;
+@keyframes animate {
+    100% {
+        transform: translateY(20px);
+    }
+
+
 }
 
-.box h2 {
-    font-size: 80px;
-    color: #fff;
-    margin: 0;
-    font-family: lato;
-    font-weight: 900;
-    text-transform: uppercase;
-    -webkit-text-stroke: 1px black;
+.cop {
+    animation: alternate 2s infinite ease alternate;
 }
 
-#example {
-    margin: 0;
+@keyframes alternate {
+    100% {
+        transform: translateX(20px);
+    }
+
+
 }
