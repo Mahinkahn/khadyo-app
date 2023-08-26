@@ -1,96 +1,90 @@
-import React from 'react';
-import Image2 from '../../../assets/images/Image2.png'
-import Image from '../../../assets/images/Image.png'
-import Image3 from '../../../assets/images/Image3.png'
-import Image4 from '../../../assets/images/Image4.png'
-import Image6 from '../../../assets/images/Image6.png'
-import Ellipse from '../../../assets/images/Ellipse 2.png'
+import React, { useContext, useState } from 'react';
+import data from '../../../assets/data/portfolioData'
 import Menu from '../../../assets/images/Menu.png'
-import Service from './Service';
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import ServicesItm from './ServicesItm';
 
 const Services = () => {
+    const [nextItems, setNextItems] = useState(6)
+    const [portfolios, setPortfolios] = useState(data)
+    const [selectTab, setSelectTab] = useState('all')
 
-    const servicesData = [
-        {
-            id: 1,
-            name: 'Glass Coffee Mugs',
-            description: 'Coffee 50%, milk 50%, 280 ml',
-            img: Image2,
 
-        },
-        {
-            id: 2,
-            name: 'Glass Coffee Mugs',
-            description: 'Coffee 50%, milk 50%, 280 ml',
-            img: Image
-        },
-        {
-            id: 3,
-            name: 'Glass Coffee Mugs',
-            description: 'Coffee 50%, milk 50%, 280 ml',
-            img: Image3
-        },
-        {
-            id: 3,
-            name: 'Glass Coffee Mugs',
-            description: 'Coffee 50%, milk 50%, 280 ml',
-            img: Image4
-        },
-        {
-            id: 3,
-            name: 'Glass Coffee Mugs',
-            description: 'Coffee 50%, milk 50%, 280 ml',
-            img: Image6
-        },
-        {
-            id: 3,
-            name: 'Glass Coffee Mugs',
-            description: 'Coffee 50%, milk 50%, 280 ml',
-            img: Ellipse
-        },
-    ]
+
+    useEffect(() => {
+
+        if (selectTab == 'all') {
+            setPortfolios(data)
+        }
+
+        if (selectTab == 'Tai Coffee') {
+            const filteredData = data.filter(item => item.category == 'Tai Coffee')
+            setPortfolios(filteredData)
+        }
+
+        if (selectTab == 'Sweets') {
+            const filteredData = data.filter(item => item.category == 'Sweets')
+            setPortfolios(filteredData)
+        }
+        if (selectTab == 'Black Coffee') {
+            const filteredData = data.filter(item => item.category == 'Black Coffee')
+            setPortfolios(filteredData)
+        }
+
+    }, [selectTab])
+
 
     return (
-        <section className=''
+
+        <section className=' w-[2100px] h-[1360px] mx-auto'
             style=
             {{
                 backgroundImage: `url(${Menu})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-                height: '1060px',
-                width: '1440px',
+                height: '',
+                width: '100%',
             }}
         >
             <div className='mt-16'>
-                <div className='text-center pt-28'>
-                    <h2 className='text-5xl font-bold font-serif'>Coffee Menu items</h2>
+                <div
+                    data-aos="fade-down" data-aos-duration="1500"
+                    className='text-center pt-28'>
+                    <h2 className='text-5xl font-bold font-serif mt-[-3%]'>Coffee Menu items</h2>
                 </div>
-                <div className=' mt-[120px] w-full h-[40px]'>
+                <div
+                    data-aos="fade-up" data-aos-duration="1500"
+                    className=' mt-40  '>
                     <nav class="flex justify-center gap-6 text-base font-bold">
-                        <Link href="" class="-mb-px font-bold w-[120px] btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral   ">
-                            Chocolate
-                        </Link>
-                        <Link href="" class="-mb-px font-bold w-[120px] btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral   ">
+                        <button
+                            onClick={() => setSelectTab('all')}
+                            className=' font-bold py-2 px-4 btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral'>
+                            All
+                        </button>
+                        <button
+                            onClick={() => setSelectTab('Tai Coffee')}
+                            className='font-bold  py-2 px-4 btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral'>
                             Tai Coffee
-                        </Link>
-                        <Link href="" class="-mb-px font-bold w-[120px] btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral   ">
+                        </button>
+                        <button
+                            onClick={() => setSelectTab('Sweets')}
+                            className='font-bold py-2 px-4 btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral'>
                             Sweets
-                        </Link>
-                        <Link href="" class="-mb-px font-bold w-[120px] btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral   ">
+                        </button>
+                        <button
+                            onClick={() => setSelectTab('Black Coffee')}
+                            className='font-bold py-2 px-4 btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral'>
                             Black Coffee
-                        </Link>
+                        </button>
 
                     </nav>
                 </div>
-
-                <div className='grid gap-x-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[710px] h-[455px] container ml-[350px]'>
+                <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[800px] mt-10 mx-auto  container '>
                     {
-                        servicesData.map(service => <Service
-                            key={service.id}
-                            service={service}
-                        ></Service>)
+                        portfolios?.slice(0, nextItems)?.map((portfolio, index) => (
+                            <ServicesItm portfolio={portfolio} index />
+                        ))
                     }
                 </div>
             </div>
