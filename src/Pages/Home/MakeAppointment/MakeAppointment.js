@@ -2,27 +2,51 @@ import React from 'react';
 import FCoffe from '../../../assets/images/FCoffe .png';
 import png from '../../../assets/images/01.png';
 import png2 from '../../../assets/images/2.png';
+import ico from '../../../assets/images/Ico.png'
+import ic from '../../../assets/images/Ic.png'
 
 import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 
 const MakeAppointment = () => {
     return (
-        <div className=' mt-24 grid gap- grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[1110px]  mx-auto '>
-            <div className='mt-8'>
-                <h1 className=' text-[52px] w-[258px] h-48 leading-tight font-bold font-serif py-4 '>The Best
+        <div className=' mt-24 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto mb-96'>
+            <div className=' ml-20'>
+                <h1 className=' text-[52px] w-[258px] leading-tight font-bold font-serif py-4 '>The Best
                     Vietnamese
                     Coffee</h1>
-                <p className=' py-4 mt-6 font-semibold text-lg'>Vestibulum ante ipsum primis in <br />
+                <p className=' py-4 mt-4 font-semibold text-lg'>Vestibulum ante ipsum primis in <br />
                     faucibus orci luctus.</p>
                 <h1 className=' text-[40px]  font-bold'>$5.00</h1>
-                <button className='btn btn-neutral mt-6 shadow-lg shadow-neutral-500/50  w-[150px] h-[53px] font-bold capitalize'>Shop Now</button>
+                <button className='btn btn-neutral mt-6 shadow-lg shadow-neutral-500/50  w-[150px] h-[53px] font-bold capitalize rounded-xl'>Shop Now</button>
             </div>
             <div className='w-[200%] h-full ml-[-60px]'>
                 <img src={FCoffe} alt="" className='' />
             </div>
-            <div className=' w-full ml-36 mt-9'>
-                <img src={png} alt="" className=' ml-[-20px]' />
-                <img src={png2} alt="" />
+
+            <div className='w-full  -mt-24 -ml-2 '>
+                <div class="max-w-md w-[284px]  py-6 px-6 bg-white shadow-lg rounded-lg my-20 relative flex flex-col lg:justify-center lg:items-center overflow-visible">
+                    <div class="flex justify-center items-center  ">
+                        <img class="w-24 h-24 object-cover rounded-full " src={ic} alt='' />
+                    </div>
+                    <div className=' text-center'>
+                        <h2 class="text-[#000000] text-xl font-semibold">Wide Assortment</h2>
+                        <p class="mt-2 text-[#000000] leading-[15.73px] ">Cras ut nisl ac sapien interdum scelerisque sed in elit rutrum in massa sed congue.</p>
+                    </div>
+                </div>
+
+                <div class="max-w-md w-[284px] py-6 px-6 bg-[#FDF4E9] shadow-lg rounded-lg my-16 relative flex flex-col lg:justify-center lg:items-center overflow-visible">
+
+                    <div class="flex lg:justify-center lg:items-center  md:justify-end  absolute -top-12 right-0 left-0">
+                        <img class="w-24 h-24 object-cover  rounded-full " src={ico} alt='' />
+                    </div>
+
+                    <div className=' text-center '>
+                        <h2 class="text-[#000000] text-xl font-semibold">Wide Assortment</h2>
+                        <p class="mt-2 text-[#000000] leading-[15.73px] ">Cras ut nisl ac sapien interdum scelerisque sed in elit rutrum in massa sed congue.</p>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     );

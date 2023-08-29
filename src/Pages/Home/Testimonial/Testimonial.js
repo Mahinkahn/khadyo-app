@@ -49,8 +49,14 @@ const Testimonial = () => {
     ]
 
     return (
-        <section className='my-16 mt-20'>
-            <div className=' relative mb-[-90px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[1400px] mx-auto ml-32'>
+        <section className=' mt-52 w-[2100px] h-[800px] mx-auto mb-44 overflow-visible relative' style={{
+            backgroundImage: `url(${Rec})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+
+        }}>
+            <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[1400px] mx-auto absolute -top-48 right-0 left-0'>
                 <div className='w-[490px] h-[280px]'>
                     <img src={Rectangl} alt="" />
                 </div>
@@ -64,18 +70,16 @@ const Testimonial = () => {
                         <div className="divider mt-[-5px] divide-black h-7 w-[162px] ml-16">
                             <img src={Ellipse} alt="" />
                         </div>
-                        <h2 className=' font-bold text-xl text-black'>+9500-75-702-35 <br />
+                        <h2 className=' font-bold text-xl text-black mb-3 -mt-2'>+9500-75-702-35 <br />
                             booking@khadyo.com</h2>
-                        <button className='btn btn-neutral mt-6 shadow-lg shadow-neutral-500/50  w-[120px] h-[40px] font-bold capitalize'>Book Now</button>
+                        <div className='cursor-pointer'>
+                            <button className='btn bg-[#9B6842] shadow-lg   font-bold capitalize'>Book Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className='relative' style={{
-                backgroundImage: `url(${Rec})`,
-                width: '1440px',
-                height: '783px',
-            }}>
-                <div className='absolute w-[1210px] ml-24'>
+            <div className='container mx-auto' >
+                <div className='absolute'>
                     <div className='mt-36'>
                         <img src={Seed} alt="" className='' />
                     </div>
@@ -84,7 +88,7 @@ const Testimonial = () => {
                         <h3 className=' text-[50px] font-serif font-bold'>Popular Products</h3>
                     </div>
                 </div>
-                <div className='absolute mt-20 ml-28  grid gap-x-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[1110px] mx-auto'>
+                <div className='absolute top-32 ml-10  grid gap-x-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[1210px] mx-auto'>
                     {
                         reviews.map(review => <Review
                             key={review._id}

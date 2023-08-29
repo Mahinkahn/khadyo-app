@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
 
-        <div class=" absolute lg:w-[110%] lg:mt-10 ml-10 lg:ml-[-3%] border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+        <div class=" absolute lg:w-[110%] lg:mt-10 ml-10 lg:ml-[-3%] border-gray-200 px-2 sm:px-4 py-2.5 rounded">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
                 <img src={logo} alt="" className='khadyo' />
                 <div class="flex md:order-2">
@@ -42,7 +42,7 @@ const Navbar = () => {
                         </div>
                         <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..."></input>
                     </div>
-                    <ul class="hom flex flex-col  mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul class="hom flex flex-col  mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0   dark:border-gray-700">
                         <li>
                             <Link href="/" class="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md: dark:text-white" aria-current="page">Home</Link>
                         </li>
