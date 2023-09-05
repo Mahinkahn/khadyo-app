@@ -11,15 +11,22 @@ import people2 from '../../../assets/images/people2.png'
 import { Link } from 'react-router-dom';
 const Item = () => {
     return (
-        <div className='grid gap-x-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-10 ml-32'>
-            <div className='mt-24'>
+        <div className=' flex mt-10 container mx-auto'
+            style={{
+                backgroundImage: `url(${bag})`,
+                backgroundPosition: 'left-bottom',
+                backgroundRepeat: 'no-repeat'
+            }}
+        >
+            <div className='mt-24 w-8/12'>
                 <div className=' flex'>
                     <h1 className=' text-5xl font-serif font-bold leading-tight w-[182px]'>Client <br />
                         Reviews</h1>
                     <div className=' mt-8 w-full relative'>
                         <img src={Vector4} alt="" />
                     </div>
-                    <div className=' absolute ml-44 mt-[-80px]'>
+                    <div className=' absolute ml-44 mt-[-80px]'
+                    >
                         <img src={Ellipse} alt="" />
                     </div>
                 </div>
@@ -33,28 +40,41 @@ const Item = () => {
                     <Link href="" class="-mb-px font-bold w-[50px] btn  border bg-white capitalize  rounded-full  text-sm  text-[#9B6842]  hover:bg-[#9B6842] hover:text-white  focus:bg-[#9B6842]  focus:text-white  active:bg-[#9B6842] ">
                         03
                     </Link>
-                    <div className=' ml-[-150px] w-full'>
-                        <img src={bag} alt="" />
+                    <div className=''>
+                        {/* <img src={bag} alt="" /> */}
                     </div>
                 </div>
             </div>
-            <div className='mt-24'>
-                <div className=' w-[760px] h-[505px]  absolute ml-[-286px] mt-[-93px]'>
-                    <img src={Rectangle} alt="" />
-                </div>
-                <div className='w-[726px] relative'>
-                    <img src={Rectangle2} alt="" className=' ml-[-37%] mt-[-10%]' />
-                    <img src={Group33} alt="" className=' ml-[340px] mt-[-41%] absolute' />
-                    <div className=' w-[612px] h-[190px] text-3xl font-bold text-white ml-[-30%] mt-[-35%] relative'>
-                        <h3>Khadyo would like to discuss this controversial issue with our users, as we find ourselves at the crossroads of a systemic crisis that will produce profound structural changes in our economy.</h3>
+            <div className='mt-24 w-4/12'
+                style={{
+                    backgroundImage: `url(${Rectangle})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
+            >
+                <div className='' >
+                    {/* <img src={Rectangle} alt="" /> */}
+                    <div className=' relative mt-[17px] mx-[17px] pb-[62px] pt-[81px] px-[52px]  '
+                        style={{
+                            backgroundImage: `url(${Rectangle2})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                        }}
+                    >
+                        {/* <img src={Rectangle2} alt="" className=' ' /> */}
+                        <img src={Group33} alt="" className=' absolute top-[52px] right-[31px]' />
+                        <div className=' text-3xl font-bold text-white relative'>
+                            <h3>Khadyo would like to discuss this controversial issue with our users, as we find ourselves at the crossroads of a systemic crisis that will produce profound structural changes in our economy.</h3>
+                        </div>
                     </div>
-                    <div className=' flex gap-3 ml-[-11%] mt-24'>
+                    <div className=' flex gap-3 justify-center items-center mt-24'>
                         <img src={Ellipse3} alt="" className=' w-[57px]' />
                         <img src={people1} alt="" className=' w-[57px]' />
                         <img src={people2} alt="" className=' w-[57px]' />
                         <img src={Ellipse3} alt="" className=' w-[57px]' />
                     </div>
                 </div>
+
             </div>
         </div>
     );

@@ -1,5 +1,4 @@
 import React from 'react';
-import quote from '../../../assets/icons/quote.svg';
 import Rectangl from '../../../assets/images/Rectangle 14.png';
 import Group2 from '../../../assets/images/Group2.png';
 import bann from '../../../assets/images/bann.png';
@@ -57,13 +56,20 @@ const Testimonial = () => {
 
         }}>
             <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[1400px] mx-auto absolute -top-48 right-0 left-0'>
-                <div className='w-[490px] h-[280px]'>
+                <div
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+                    className='w-[490px] h-[280px]'>
                     <img src={Rectangl} alt="" />
                 </div>
-                <div className=' ml-10'>
+                <div
+                    data-aos="flip-down" data-aos-duration="1500"
+                    className=' ml-10'>
                     <img src={bann} alt="" />
                 </div>
-                <div className='mt-[-29px] ml-[-115px] w-[300px]'>
+                <div
+                    data-aos="zoom-out-left" data-aos-duration="1500" className='mt-[-29px] ml-[-115px] w-[300px]'>
                     <img src={BG_Shape} alt="" />
                     <div className=' text-center mt-[-80%]'>
                         <h1 className=' text-2xl text-white  font-serif font-semibold'>Table Reservation</h1>
@@ -79,13 +85,15 @@ const Testimonial = () => {
                 </div>
             </div>
             <div className='container mx-auto' >
-                <div className='absolute'>
-                    <div className='mt-36'>
+                <div
+                    data-aos="fade-down" data-aos-duration="1500"
+                    className='absolute '>
+                    <div className='mt-40'>
                         <img src={Seed} alt="" className='' />
                     </div>
-                    <div className='flex gap-6 mr-20 justify-center mt-[-60px]'>
+                    <div className='flex gap-6 mr-20 justify-center items-center mt-[-50px]'>
                         <img src={Vector2} alt="" className='mt-8' />
-                        <h3 className=' text-[50px] font-serif font-bold'>Popular Products</h3>
+                        <h3 className=' text-[50px] font-serif font-bold z-10'>Popular Products</h3>
                     </div>
                 </div>
                 <div className='absolute top-32 ml-10  grid gap-x-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[1210px] mx-auto'>

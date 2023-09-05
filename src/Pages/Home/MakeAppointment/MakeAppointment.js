@@ -11,20 +11,32 @@ const MakeAppointment = () => {
     return (
         <div className=' mt-24 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto mb-96'>
             <div className=' ml-20'>
-                <h1 className=' text-[52px] w-[258px] leading-tight font-bold font-serif py-4 '>The Best
+                <h1
+                    data-aos="fade-up" data-aos-duration="1500"
+                    className=' text-[52px] w-[258px] leading-tight font-bold font-serif py-4 '>The Best
                     Vietnamese
                     Coffee</h1>
-                <p className=' py-4 mt-4 font-semibold text-lg'>Vestibulum ante ipsum primis in <br />
+                <p
+                    data-aos="fade-left" data-aos-duration="1500"
+                    className=' py-4 mt-4 font-semibold text-lg'>Vestibulum ante ipsum primis in <br />
                     faucibus orci luctus.</p>
-                <h1 className=' text-[40px]  font-bold'>$5.00</h1>
-                <button className='btn btn-neutral mt-6 shadow-lg shadow-neutral-500/50  w-[150px] h-[53px] font-bold capitalize rounded-xl'>Shop Now</button>
+                <h1
+                    data-aos="fade-up" data-aos-duration="1500"
+                    className=' text-[40px]  font-bold'>$5.00</h1>
+                <button
+                    data-aos="fade-down-left" data-aos-duration="1500"
+                    className='btn btn-neutral mt-6 shadow-lg shadow-neutral-500/50  w-[150px] h-[53px] font-bold capitalize rounded-xl'>Shop Now</button>
             </div>
-            <div className='w-[200%] h-full ml-[-60px]'>
+            <div
+                data-aos="zoom-in-down" data-aos-duration="1500"
+                className='w-[200%] h-full ml-[-60px]'>
                 <img src={FCoffe} alt="" className='' />
             </div>
 
             <div className='w-full  -mt-24 -ml-2 '>
-                <div class="max-w-md w-[284px]  py-6 px-6 bg-white shadow-lg rounded-lg my-20 relative flex flex-col lg:justify-center lg:items-center overflow-visible">
+                <div
+                    data-aos="flip-left" data-aos-duration="1500"
+                    class="max-w-md w-[284px]  py-6 px-6 bg-white shadow-lg rounded-lg my-20 relative flex flex-col lg:justify-center lg:items-center overflow-visible">
                     <div class="flex justify-center items-center  ">
                         <img class="w-24 h-24 object-cover rounded-full " src={ic} alt='' />
                     </div>
@@ -34,7 +46,9 @@ const MakeAppointment = () => {
                     </div>
                 </div>
 
-                <div class="max-w-md w-[284px] py-6 px-6 bg-[#FDF4E9] shadow-lg rounded-lg my-16 relative flex flex-col lg:justify-center lg:items-center overflow-visible">
+                <div
+                    data-aos="flip-down" data-aos-duration="1500"
+                    class="max-w-md w-[284px] py-6 px-6 bg-[#FDF4E9] shadow-lg rounded-lg my-16 relative flex flex-col lg:justify-center lg:items-center overflow-visible">
 
                     <div class="flex lg:justify-center lg:items-center  md:justify-end  absolute -top-12 right-0 left-0">
                         <img class="w-24 h-24 object-cover  rounded-full " src={ico} alt='' />

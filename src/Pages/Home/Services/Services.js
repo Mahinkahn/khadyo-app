@@ -1,11 +1,11 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import data from '../../../assets/data/portfolioData'
 import Menu from '../../../assets/images/Menu.png'
 import { useEffect } from 'react';
 import ServicesItm from './ServicesItm';
 
 const Services = () => {
-    const [nextItems, setNextItems] = useState(6)
+    const [nextItems] = useState(6)
     const [portfolios, setPortfolios] = useState(data)
     const [selectTab, setSelectTab] = useState('all')
 
@@ -13,21 +13,21 @@ const Services = () => {
 
     useEffect(() => {
 
-        if (selectTab == 'all') {
+        if (selectTab === 'all') {
             setPortfolios(data)
         }
 
-        if (selectTab == 'Tai Coffee') {
-            const filteredData = data.filter(item => item.category == 'Tai Coffee')
+        if (selectTab === 'Tai Coffee') {
+            const filteredData = data.filter(item => item.category === 'Tai Coffee')
             setPortfolios(filteredData)
         }
 
-        if (selectTab == 'Sweets') {
-            const filteredData = data.filter(item => item.category == 'Sweets')
+        if (selectTab === 'Sweets') {
+            const filteredData = data.filter(item => item.category === 'Sweets')
             setPortfolios(filteredData)
         }
-        if (selectTab == 'Black Coffee') {
-            const filteredData = data.filter(item => item.category == 'Black Coffee')
+        if (selectTab === 'Black Coffee') {
+            const filteredData = data.filter(item => item.category === 'Black Coffee')
             setPortfolios(filteredData)
         }
 
