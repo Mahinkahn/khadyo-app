@@ -12,25 +12,25 @@ import { Link } from 'react-router-dom';
 const Item = () => {
     return (
         <div className=' flex mt-10 container mx-auto'
-            style={{
-                backgroundImage: `url(${bag})`,
-                backgroundPosition: 'left-bottom',
-                backgroundRepeat: 'no-repeat'
-            }}
+
         >
-            <div className='mt-24 w-8/12'>
+            <div className='mt-24  w-2/4 relative '>
                 <div className=' flex'>
-                    <h1 className=' text-5xl font-serif font-bold leading-tight w-[182px]'>Client <br />
+                    <h1 className=' text-5xl font-serif font-bold leading-tight w-[182px] overflow-visible'>Client <br />
                         Reviews</h1>
                     <div className=' mt-8 w-full relative'>
                         <img src={Vector4} alt="" />
                     </div>
-                    <div className=' absolute ml-44 mt-[-80px]'
+                    <div className=' absolute ml-44 mt-[-78px] overflow-visible'
                     >
                         <img src={Ellipse} alt="" />
                     </div>
+
                 </div>
-                <div className=' flex mt-10 relative'>
+                <div className='absolute'>
+                    <img src={bag} alt="" />
+                </div>
+                <div className=' flex mt-8 mb-2 relative overflow-visible'>
                     <Link href="" class="-mb-px font-bold w-[50px] mr-3 btn  border rounded-full bg-white capitalize   text-sm  text-[#9B6842]  hover:bg-[#9B6842]  hover:text-white  focus:bg-[#9B6842]  focus:text-white  active:bg-[#9B6842]    ">
                         01
                     </Link>
@@ -45,20 +45,24 @@ const Item = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-24 w-4/12'
-                style={{
-                    backgroundImage: `url(${Rectangle})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                }}
+            <div className='mt-24 w-2/4  relative right-[400px] -top-28  '
+            // style={{
+            //     backgroundImage: `url(${Rectangle})`,
+            //     backgroundSize: 'cover',
+            //     backgroundPosition: 'center',
+            //     width: '100vh',
+
+            // }}
             >
+                <div className=" w-full h-full bg-[#FFE4C3] rounded-xl absolute   "></div>
                 <div className='' >
                     {/* <img src={Rectangle} alt="" /> */}
-                    <div className=' relative mt-[17px] mx-[17px] pb-[62px] pt-[81px] px-[52px]  '
+                    <div className=' relative mt-8 mx-[17px] pb-[62px] pt-[81px] px-[52px]   '
                         style={{
                             backgroundImage: `url(${Rectangle2})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
+
                         }}
                     >
                         {/* <img src={Rectangle2} alt="" className=' ' /> */}
@@ -67,7 +71,7 @@ const Item = () => {
                             <h3>Khadyo would like to discuss this controversial issue with our users, as we find ourselves at the crossroads of a systemic crisis that will produce profound structural changes in our economy.</h3>
                         </div>
                     </div>
-                    <div className=' flex gap-3 justify-center items-center mt-24'>
+                    <div className=' flex gap-3 justify-center items-center mt-20 mb-20 '>
                         <img src={Ellipse3} alt="" className=' w-[57px]' />
                         <img src={people1} alt="" className=' w-[57px]' />
                         <img src={people2} alt="" className=' w-[57px]' />

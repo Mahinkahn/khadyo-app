@@ -93,7 +93,7 @@ const Testimonial = () => {
                     </div>
                     <div className='flex gap-6 mr-20 justify-center items-center mt-[-50px]'>
                         <img src={Vector2} alt="" className='mt-8' />
-                        <h3 className=' text-[50px] font-serif font-bold z-10'>Popular Products</h3>
+                        <h3 className=' text-[50px] font-serif font-bold '>Popular Products</h3>
                     </div>
                 </div>
                 <div className='absolute top-32 ml-10  grid gap-x-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[1210px] mx-auto'>
