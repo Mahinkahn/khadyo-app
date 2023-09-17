@@ -10,6 +10,9 @@ import people1 from '../../../assets/images/people1.png'
 import people2 from '../../../assets/images/people2.png'
 import { Link } from 'react-router-dom';
 const Item = () => {
+
+
+
     return (
         <div className=' flex mt-10 container mx-auto'
 
@@ -54,31 +57,33 @@ const Item = () => {
 
             // }}
             >
-                <div className=" w-full h-full bg-[#FFE4C3] rounded-xl absolute   "></div>
-                <div className='' >
-                    {/* <img src={Rectangle} alt="" /> */}
-                    <div className=' relative mt-8 mx-[17px] pb-[62px] pt-[81px] px-[52px]   '
-                        style={{
-                            backgroundImage: `url(${Rectangle2})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
+                <div className=" w-full h-full bg-[#FFE4C3] rounded-xl    ">
+                    <div className='' >
+                        {/* <img src={Rectangle} alt="" /> */}
+                        <div className=' relative mt-8 mx-[17px] pb-[62px] pt-[81px] px-[52px]   '
+                            style={{
+                                backgroundImage: `url(${Rectangle2})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
 
-                        }}
-                    >
-                        {/* <img src={Rectangle2} alt="" className=' ' /> */}
-                        <img src={Group33} alt="" className=' absolute top-[52px] right-[31px]' />
-                        <div className=' text-3xl font-bold text-white relative'>
-                            <h3>Khadyo would like to discuss this controversial issue with our users, as we find ourselves at the crossroads of a systemic crisis that will produce profound structural changes in our economy.</h3>
+                            }}
+                        >
+                            {/* <img src={Rectangle2} alt="" className=' ' /> */}
+                            <img src={Group33} alt="" className=' absolute top-[52px] right-[31px]' />
+                            <div className=' text-3xl font-bold text-white relative'>
+                                <h3>Khadyo would like to discuss this controversial issue with our users, as we find ourselves at the crossroads of a systemic crisis that will produce profound structural changes in our economy.</h3>
+                            </div>
+                        </div>
+                        <div className="border">
+                            <div className=' flex gap-3 justify-center items-center mt-20 mb-20  z-10  '>
+                                <img src={Ellipse3} alt="" className=' w-[57px]' />
+                                <img src={people1} alt="" className=' w-[57px]' />
+                                <img src={people2} alt="" className=' w-[57px]' />
+                                <img src={Ellipse3} alt="" className=' w-[57px]' />
+                            </div>
                         </div>
                     </div>
-                    <div className=' flex gap-3 justify-center items-center mt-20 mb-20 '>
-                        <img src={Ellipse3} alt="" className=' w-[57px]' />
-                        <img src={people1} alt="" className=' w-[57px]' />
-                        <img src={people2} alt="" className=' w-[57px]' />
-                        <img src={Ellipse3} alt="" className=' w-[57px]' />
-                    </div>
                 </div>
-
             </div>
         </div>
     );

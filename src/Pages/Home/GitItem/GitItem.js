@@ -58,7 +58,10 @@ const GitItem = () => {
                 </div>
 
             </Slider>
+
         </div>
+
+
     );
 };
 
