@@ -21,7 +21,11 @@ const GitItem = () => {
 
     return (
 
-        <div className=' container mx-auto flex justify-center items-center mt-20 mb-20 overflow-visible'>
+        <div
+            data-aos='fade-zoom-in'
+            data-aos-delay='50'
+            data-aos-duration='1000'
+            className='container mx-auto flex justify-center items-center mt-20 mb-20 overflow-visible'>
 
             <Slider {...settings}>
 

@@ -1,11 +1,8 @@
 import React from 'react';
 import FCoffe from '../../../assets/images/FCoffe .png';
-import png from '../../../assets/images/01.png';
-import png2 from '../../../assets/images/2.png';
 import ico from '../../../assets/images/Ico.png'
 import ic from '../../../assets/images/Ic.png'
 
-import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 
 const MakeAppointment = () => {
     return (

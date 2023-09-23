@@ -59,24 +59,28 @@ const Services = () => {
                     <nav class="flex justify-center gap-6 text-base font-bold">
                         <button
                             onClick={() => setSelectTab('all')}
-                            className=' font-bold py-2 px-4 btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral'>
+                            className={` font-bold py-2 px-4 btn  border-none capitalize  rounded  text-sm  hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral ${selectTab === 'all' ? "bg-neutral text-white" : "bg-white text-black"}`}>
                             All
                         </button>
+
                         <button
                             onClick={() => setSelectTab('Tai Coffee')}
-                            className='font-bold  py-2 px-4 btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral'>
+                            className={` font-bold py-2 px-4 btn  border-none capitalize  rounded  text-sm  hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral ${selectTab === 'Tai Coffee' ? "bg-neutral text-white" : "bg-white text-black"}`}>
                             Tai Coffee
                         </button>
+
                         <button
                             onClick={() => setSelectTab('Sweets')}
-                            className='font-bold py-2 px-4 btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral'>
+                            className={` font-bold py-2 px-4 btn  border-none capitalize  rounded  text-sm  hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral ${selectTab === 'Sweets' ? "bg-neutral text-white" : "bg-white text-black"}`}>
                             Sweets
                         </button>
                         <button
                             onClick={() => setSelectTab('Black Coffee')}
-                            className='font-bold py-2 px-4 btn  border-none bg-white capitalize  rounded  text-sm  text-black hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral'>
+                            className={` font-bold py-2 px-4 btn  border-none capitalize  rounded  text-sm  hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral ${selectTab === 'Black Coffee' ? "bg-neutral text-white" : "bg-white text-black"}`}>
                             Black Coffee
                         </button>
+
+
 
                     </nav>
                 </div>
