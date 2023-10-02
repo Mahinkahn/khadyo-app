@@ -1,20 +1,27 @@
 import React, { useState } from 'react';
 import { FaShoppingBag } from 'react-icons/fa';
-import grp from '../../../assets/icons/Group 2.png'
 import arrow from '../../../assets/icons/arrow-square-down.svg'
 import square from '../../../assets/icons/arrow-square.png'
 import { Link } from 'react-router-dom';
 
 const Review = ({ review }) => {
+
+
+
     const [previousCaseNumber, setPreviousCaseNumber] = useState(0);
     const { name, img, imga, location } = review;
+
     return (
+
+
         <div
             data-aos='fade-zoom-in'
             data-aos-delay='50'
             data-aos-duration='1000'
-            className="card group/item group relative  flex items-center  mt-48 w-[270px] h-[373px] bg-[#F9F0EB] hover:bg-slate-900 hover:text-white">
-            <div className="card-body items-center">
+            className="card group/item group relative  flex justify-center items-center w-[270px] h-[373px] bg-[#F9F0EB] hover:bg-slate-900 hover:text-white">
+
+            <div
+                className="card-body items-center">
                 <img src={imga} alt="" className='mr-44 h-[120px] mt-[-48px] group/edit invisible group-hover/item:visible' />
                 <div className="mt-[-50px]">
                     <div className="">
@@ -46,6 +53,7 @@ const Review = ({ review }) => {
                 </div>
             </div>
         </div>
+
     );
 };
 

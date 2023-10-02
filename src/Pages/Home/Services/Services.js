@@ -36,15 +36,14 @@ const Services = () => {
 
     return (
 
-        <section className=' w-[2100px] h-[1360px] mx-auto'
+        <section className=' w-screen h-[1360px] mx-auto'
             style=
             {{
                 backgroundImage: `url(${Menu})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-                height: '',
-                width: '100%',
+
             }}
         >
             <div className='mt-16'>

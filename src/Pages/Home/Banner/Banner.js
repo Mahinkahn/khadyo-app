@@ -19,22 +19,21 @@ import b from '../../../assets/images/b.png';
 import a from '../../../assets/images/a.png';
 import c from '../../../assets/images/c.png';
 
-import Bannercss from '../Banner/Banner.css';
+import '../Banner/Banner.css';
 import { TypeAnimation } from 'react-type-animation';
 
 
 
 const Banner = () => {
     return (
-        <section className=' '
-
+        <section className=' w-screen'
         >
             <div className=" hero " style={{
                 backgroundImage: `url(${Header})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '95vh',
-                width: '201vh',
+                // width: '201vh',
             }}>
                 <img src={Round} alt="" className='mt-[-17%] w-[490px] khadyo' />
 

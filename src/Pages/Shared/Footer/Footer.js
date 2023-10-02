@@ -105,12 +105,12 @@ const Footer = () => {
                         }}>
                         <form className=' w-[336px] -ml-5 '>
                             <h1 className=' text-white leading-[18.75px] font-bold my-5 text-base'>Subscribe Newsletter</h1>
-                            <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white ">Search</label>
+                            <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-black ">Search</label>
                             <div class="relative ">
                                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none ">
 
                                 </div>
-                                <input type="email" id="email" class="block w-full p-4 pl-10 text-sm text-gray-900   rounded-lg bg-white focus:bg-slate-100   dark:text-white  " placeholder="Enter your email" required />
+                                <input type="email" id="email" class="block w-full p-4 pl-10 text-sm text-black   rounded-lg bg-white focus:bg-slate-100   dark:text-black  " placeholder="Enter your email" required />
                                 <button type="submit" class="text-white font-semibold bg-[#9B6842] absolute right-2.5 bottom-2.5  hover:bg-[#8E572D] focus:border-white text-sm rounded-lg  px-4 py-2 dark:bg-[#9B6842] dark:hover:bg-[#9B6842] dark:focus:bg-[#9B6842]">Sent Now</button>
                             </div>
                         </form>

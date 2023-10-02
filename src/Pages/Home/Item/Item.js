@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Vector4 from '../../../assets/images/Vector4.png'
 import Ellipse from '../../../assets/images/Ellipse 8.png'
 import bag from '../../../assets/images/bag-05 .png'
-import Rectangle from '../../../assets/images/Rectangle 20.png'
+
 import Rectangle2 from '../../../assets/images/Rectangle 21.png'
 import Group33 from '../../../assets/images/Group33.png'
 import Ellipse3 from '../../../assets/images/Ellipse 13.png'
@@ -10,6 +10,7 @@ import people1 from '../../../assets/images/people1.png'
 import people2 from '../../../assets/images/people2.png'
 import { Link } from 'react-router-dom';
 const Item = () => {
+
 
 
     const items = [
@@ -42,9 +43,8 @@ const Item = () => {
     useEffect(() => {
         const interval = setInterval(nextSlide, 5000);
         return () => clearInterval(interval);
-    }, []);
+    },);
 
-    console.log(activeIndex)
 
     return (
         <div className=' flex mt-10 container mx-auto mr-10'
@@ -78,7 +78,7 @@ const Item = () => {
                     data-aos="fade-left" data-aos-duration="1500"
                     className=' flex mt-8 mb-2 relative overflow-visible'>
                     {items.map((item, index) => (
-                        <Link onClick={() => setActiveIndex(index + 1)} href="" class={`-mb-px font-bold w-[50px] mr-3 btn  border rounded-full capitalize   text-sm  hover:bg-[#9B6842]  hover:text-white  focus:bg-[#9B6842]  focus:text-white  active:bg-[#9B6842]    ${index === activeIndex ? "bg-[#9B6842] text-white" : "bg-white text-[#9B6842]"}`}>
+                        <Link onClick={() => setActiveIndex(index + 0)} href="" class={`-mb-px font-bold w-[50px] mr-3 btn  border rounded-full capitalize   text-sm  hover:bg-[#9B6842]  hover:text-white  focus:bg-[#9B6842]  focus:text-white  active:bg-[#9B6842]    ${index === activeIndex ? "bg-[#9B6842] text-white" : "bg-white text-[#9B6842]"}`}>
                             {index + 1}
                         </Link>
                     ))}
