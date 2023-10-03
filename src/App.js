@@ -5,7 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import 'aos/dist/aos.css';
 import './App.css';
 import router from './Routes/Routes/Routes';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Loader from './components/loader/Loader';
+
 
 
 function App() {
@@ -14,7 +16,22 @@ function App() {
     Aos.init();
   }, []);
 
-  return (
+  // loader state
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Let create async method to fetch fake data
+  useEffect(() => {
+    const fakeDataFetch = () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 4000);
+    };
+
+    fakeDataFetch();
+  }, []);
+
+  return isLoading ? (
+    <Loader />) : (
     <div>
       <RouterProvider router={router}></RouterProvider>
     </div>
