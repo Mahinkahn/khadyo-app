@@ -9,6 +9,7 @@ import image7 from '../../../assets/images/image 77.png'
 const GitItem = () => {
 
     const settings = {
+        arrows: false,
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
