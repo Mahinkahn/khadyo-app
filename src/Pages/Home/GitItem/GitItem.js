@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Slider from "react-slick";
 import image2 from '../../../assets/images/image 22.png'
 import image3 from '../../../assets/images/image 33.png'
@@ -25,7 +25,7 @@ const GitItem = () => {
             data-aos='fade-zoom-in'
             data-aos-delay='50'
             data-aos-duration='1000'
-            className='container mx-auto flex justify-center items-center mt-20 mb-20 overflow-visible'>
+            className='container mx-auto  items-center mt-20 mb-20 '>
 
             <Slider {...settings}>
 
@@ -62,6 +62,9 @@ const GitItem = () => {
                 </div>
 
             </Slider>
+
+
+
 
         </div>
 

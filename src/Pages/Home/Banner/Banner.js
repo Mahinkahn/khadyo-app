@@ -61,7 +61,7 @@ const Banner = () => {
 
                 <img
                     data-aos="fade-up" data-aos-duration="1500"
-                    src={text} alt="" className='cop w-96 h-[260px] mt-[-16%] ml-[-68%]' />
+                    src={text} alt="" className='cop w-96 h-[260px] mt-[-16%] ml-[-68%] overflow-hidden' />
 
 
                 <img src={V} alt="" className=' ml-[-71%] mt-44 khadyo' />
@@ -76,12 +76,12 @@ const Banner = () => {
 
                     <h1
                         data-aos="fade-down" data-aos-duration="1500"
-                        className="text-6xl font-bold bg-secondary rounded-2xl w-[210px] h-[83px] text-[#582A18] font-serif py-3">Fresh
+                        className="text-6xl font-bold bg-secondary rounded-2xl w-[210px] h-[83px] text-[#582A18] font-serif py-3 ">Fresh
                     </h1>
                 </div>
                 <h1
                     data-aos="fade-left" data-aos-duration="1500"
-                    className=" text-6xl font-bold text-neutral-content ml-64 mt-[-34px] font-serif">
+                    className=" text-6xl font-bold text-neutral-content ml-64 mt-[-34px] font-serif ">
                     <TypeAnimation
                         sequence={[
                             'Coffee', // Types 'Coffee'
@@ -101,7 +101,7 @@ const Banner = () => {
                 </h1>
                 <h1
                     data-aos="fade-up" data-aos-duration="1500"
-                    className=" text-6xl font-bold text-neutral-content ml-6 mt-[144px] font-serif">
+                    className=" text-6xl font-bold text-neutral-content ml-6 mt-[144px] font-serif ">
                     <TypeAnimation
                         sequence={[
                             'Experience', // Types 'Coffee'

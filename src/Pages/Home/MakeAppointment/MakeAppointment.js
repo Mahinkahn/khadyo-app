@@ -30,7 +30,7 @@ const MakeAppointment = () => {
 
 
 
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [setActiveIndex] = useState(0);
 
     // Function to increment the active slide index
     const nextSlide = () => {
@@ -71,21 +71,7 @@ const MakeAppointment = () => {
                     <img src={FCoffe} alt="" className='' />
                 </div>
 
-                <div className=" wrapper flex items-center">
 
-                    <div class="button ">
-                        <div class="icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </div>
-                        <span className=''>Facebook</span>
-                    </div>
-                    <div class="button">
-                        <div class="icon">
-                            <i class="fab fa-twitter"></i>
-                        </div>
-                        <span>Twitter</span>
-                    </div>
-                </div>
             </div>
 
 

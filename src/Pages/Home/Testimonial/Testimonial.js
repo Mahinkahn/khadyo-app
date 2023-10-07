@@ -15,11 +15,13 @@ import Review from './Review';
 import './Testimonial.css'
 
 
+
+
 const Testimonial = () => {
 
 
     const settings = {
-
+        arrows: false,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -133,9 +135,9 @@ const Testimonial = () => {
                 <div className='mt-44  w-full container mx-auto'>
                     <img src={Seed} alt="" className=' w-full h-[83.44px]' />
                 </div>
-                <div className=' container mx-auto mt-[-50px] '>
+                <div className=' container mx-auto  '>
                     <div className="flex flex-row-reverse justify-center items-center">
-                        <h3 className=' text-[50px] font-serif font-bold relative '>Popular Products</h3>
+                        <h3 className=' text-[50px] font-serif font-bold relative mt-28 '>Popular Products</h3>
                         <img src={Vector2} alt="" className=' absolute  left-[37rem] top-[14.5rem] ' />
 
                     </div>
@@ -144,7 +146,7 @@ const Testimonial = () => {
             </div>
 
             {/* <div className='grid gap-16 overflow-visible grid-cols-1 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 lg:w-[1210px]  container mx-auto mb-32  '> */}
-            <div className=" lg:w-[1210px] mx-auto ">
+            <div className=" lg:w-[1210px] mx-auto mt-14 ">
                 <Slider {...settings}>
 
                     {

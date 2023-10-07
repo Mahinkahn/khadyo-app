@@ -36,7 +36,7 @@ const Services = () => {
 
     return (
 
-        <section className=' w-screen h-[1360px] mx-auto'
+        <section className=' w-screen h-[1200px] mx-auto'
             style=
             {{
                 backgroundImage: `url(${Menu})`,
@@ -55,7 +55,7 @@ const Services = () => {
                 <div
                     data-aos="fade-up" data-aos-duration="1500"
                     className=' mt-40  '>
-                    <nav class="flex justify-center gap-6 text-base font-bold">
+                    <nav class="flex justify-center gap-6 text-base font-bold mt-3">
                         <button
                             onClick={() => setSelectTab('all')}
                             className={` font-bold py-2 px-4 btn  border-none capitalize  rounded  text-sm  hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral ${selectTab === 'all' ? "bg-neutral text-white" : "bg-white text-black"}`}>
@@ -78,8 +78,6 @@ const Services = () => {
                             className={` font-bold py-2 px-4 btn  border-none capitalize  rounded  text-sm  hover:bg-neutral hover:text-white  focus:bg-neutral focus:text-white  active:bg-neutral ${selectTab === 'Black Coffee' ? "bg-neutral text-white" : "bg-white text-black"}`}>
                             Black Coffee
                         </button>
-
-
 
                     </nav>
                 </div>
