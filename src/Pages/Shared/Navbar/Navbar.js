@@ -47,7 +47,7 @@ const Navbar = () => {
                             <Link href="/" class="block font-bold py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md: dark:text-white" aria-current="page">Home</Link>
                         </li>
                         <li>
-                            <Link href="#" class="block py-2 pl-3 font-bold pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent text-white md: md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ">About us</Link>
+                            <Link href="/about us" class="block py-2 pl-3 font-bold pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent text-white md: md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ">About us</Link>
                         </li>
                         <li>
                             <Link href="#" class="block font-bold  py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent text-white md: dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ">Products</Link>

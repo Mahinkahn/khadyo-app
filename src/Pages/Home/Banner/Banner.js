@@ -65,12 +65,12 @@ const Banner = () => {
 
 
                 <img src={V} alt="" className=' ml-[-71%] mt-44 khadyo' />
-                <img src={Rectangle} alt="" className='Rectangle ml-[-71%] mt-48' />
+                <img src={Rectangle} alt="" className='coffe ml-[-71%] mt-48' />
 
-                <img src={Gro1} alt="" className='ml-[-58%] coffe' />
+                <img src={Gro1} alt="" className='ml-[-58%] Rectangle' />
 
                 <img src={Vector5} alt="" className=' ml-[60%] mt-[-200px] khadyo' />
-                <img src={Rectangle3} alt="" className='Rectangle ml-[62%] mt-[-140px]' />
+                <img src={Rectangle3} alt="" className='cop ml-[62%] mt-[-140px]' />
 
                 <div className="hero-content text-center ml-[-10%] mt-[-50px]  text-neutral-content">
 

@@ -47,7 +47,7 @@ const Item = () => {
 
 
     return (
-        <div className=' flex mt-10 container mx-auto mr-10'
+        <div className=' flex mt-10 container mx-auto mr-10 mb-9'
 
         >
             <div className='mt-24 w-2/4 relative overflow-visible '>
@@ -90,14 +90,14 @@ const Item = () => {
 
             <div
                 data-aos="fade-left" data-aos-duration="1500"
-                className=' relative right-[420px] overflow-hidden '>
+                className=' relative right-[420px] -mt-2'>
 
                 <div className="w-[760px] h-[505px] bg-[#FFE4C3] rounded-xl overflow-visible   ">
 
-                    <div className=' ' >
+                    <div className='' >
 
                         {items.map((item, index) => (
-                            <div className={`w-auto  relative mt-8 mx-[17px] pb-[62px] pt-[81px] px-[52px] transition-all duration-1000 ${index === activeIndex ? 'block w-full' : 'hidden w-0'} `}
+                            <div className={`w-auto  relative  mx-[17px] pb-[62px] pt-[85px] px-[52px] transition-all duration-1000 ${index === activeIndex ? 'block w-full' : 'hidden w-0'} `}
                                 style={{
                                     backgroundImage: `url(${Rectangle2})`,
                                     backgroundSize: 'cover',
