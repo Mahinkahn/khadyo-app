@@ -23,7 +23,7 @@ const Footer = () => {
     return (
         <footer
 
-            className="p-1 bg-[#F6D1A540] overflow-hidden">
+            className="p-1 bg-[#F6D1A540] mt-[100px] overflow-x-hidden">
             <Helmet>
                 <link
                     rel="stylesheet"

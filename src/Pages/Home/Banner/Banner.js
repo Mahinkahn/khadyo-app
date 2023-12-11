@@ -26,13 +26,13 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
     return (
-        <section className=' w-screen'
+        <section className='overflow-x-hidden'
         >
             <div className=" hero " style={{
                 backgroundImage: `url(${Header})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '95vh',
+                height: '100vh',
                 // width: '201vh',
             }}>
                 <img src={Round} alt="" className='mt-[-17%] w-[490px] khadyo' />
@@ -42,7 +42,7 @@ const Banner = () => {
 
                 <img src={g} alt="" className=' ml-[600px] mt-[-40px] Rectangle' />
 
-                <img src={Gb} alt="" className=' ml-[88%] mt-[-37%] w-[250px] khadyo' />
+                <img src={Gb} alt="" className=' ml-[88%] mt-[-37%] w-[250px] khadyo ' />
                 <img src={b} alt="" className='ml-[78%] mt-[-17%] coffe' />
 
                 <img src={a} alt="" className='ml-[93%] mt-[7%]  Rectangle' />
@@ -82,22 +82,7 @@ const Banner = () => {
                 <h1
                     data-aos="fade-left" data-aos-duration="1500"
                     className=" text-6xl font-bold text-neutral-content ml-64 mt-[-34px] font-serif ">
-                    <TypeAnimation
-                        sequence={[
-                            'Coffee', // Types 'Coffee'
-                            2500, // Waits 3s
-                            'Fresh', // Deletes 'One' and types 'Fresh'
-                            4000, // Waits 2s
-
-                            () => {
-                                console.log('Done typing!'); // Place optional callbacks anywhere in the array
-                            }
-                        ]}
-                        wrapper="div"
-                        cursor={true}
-                        repeat={Infinity}
-                        style={{ fontSize: '' }}
-                    />
+                    Coffee
                 </h1>
                 <h1
                     data-aos="fade-up" data-aos-duration="1500"

@@ -12,7 +12,7 @@ const InfoCards = () => {
 
 
     return (
-        <div className=' mt-[-60px] grid  gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-24 mr-24 container  mx-auto'>
+        <div className=' mt-[-60px] grid  gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mr-24 container  mx-auto' id='aboutus'>
             <div className='mt-[45px]'>
                 <h1
                     data-aos="fade-up" data-aos-duration="1500"

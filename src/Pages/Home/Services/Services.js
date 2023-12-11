@@ -36,7 +36,7 @@ const Services = () => {
 
     return (
 
-        <section className=' w-screen h-[1200px] mx-auto'
+        <section className='h-[1240px] mx-auto mt-[90px]'
             style=
             {{
                 backgroundImage: `url(${Menu})`,
@@ -50,7 +50,7 @@ const Services = () => {
                 <div
                     data-aos="fade-down" data-aos-duration="1500"
                     className='text-center pt-28'>
-                    <h2 className='text-5xl font-bold font-serif mt-[-3%]'>Coffee Menu items</h2>
+                    <h2 className='text-5xl font-bold font-serif '>Coffee Menu items</h2>
                 </div>
                 <div
                     data-aos="fade-up" data-aos-duration="1500"

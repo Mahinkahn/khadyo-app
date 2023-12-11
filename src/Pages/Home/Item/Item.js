@@ -47,7 +47,7 @@ const Item = () => {
 
 
     return (
-        <div className=' flex mt-10 container mx-auto mr-10 mb-9'
+        <div className=' flex mt-[100px] container mx-auto mr-10 overflow-x-hidden '
 
         >
             <div className='mt-24 w-2/4 relative overflow-visible '>

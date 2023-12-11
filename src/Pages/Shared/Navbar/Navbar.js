@@ -1,21 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/images/logo-12 1.png';
 
 
 const Navbar = () => {
 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     const menuItems = <React.Fragment>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/appointment">About us</Link></li>
-        <li><Link to="/about">Products</Link></li>
-        <li><Link to="/reviews">Contact</Link></li>
+        <li className=' text-white hover:text-slate-500 '><Link to="/">Home</Link></li>
+        <li className=' text-white hover:text-slate-500 '><Link to="#aboutus">About us</Link></li>
+        <li className=' text-white hover:text-slate-500'><Link to="#">Products</Link></li>
+        <li className=' text-white hover:text-slate-500 '><Link to="#">Contact</Link></li>
 
     </React.Fragment>
 
     return (
 
-        <div class=" absolute lg:w-[110%] lg:mt-10 ml-10 lg:ml-[-3%] border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+        <header className={` ${scrollPosition > 100 ? 'bg-slate-400' : 'bg-transparent '} z-20 fixed top-0 py-5  left-0 w-full`}>
             <div class="container flex flex-wrap items-center justify-between mx-auto">
                 <img src={logo} alt="" className='khadyo' />
                 <div class="flex md:order-2">
@@ -42,23 +56,14 @@ const Navbar = () => {
                         </div>
                         <input type="text" id="search-navbar" class="block bg-white w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..."></input>
                     </div>
-                    <ul class="hom flex flex-col  mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0   dark:border-gray-700">
-                        <li>
-                            <Link href="/" class="block font-bold py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md: dark:text-white" aria-current="page">Home</Link>
-                        </li>
-                        <li>
-                            <Link href="/about us" class="block py-2 pl-3 font-bold pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent text-white md: md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ">About us</Link>
-                        </li>
-                        <li>
-                            <Link href="#" class="block font-bold  py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent text-white md: dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ">Products</Link>
-                        </li>
-                        <li>
-                            <Link href="#" class="block font-bold py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent text-white md: dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ">Contact</Link>
-                        </li>
+                    <ul class="hom flex flex-col gap-8  mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0   dark:border-gray-700">
+                        {
+                            menuItems
+                        }
                     </ul>
                 </div>
             </div>
-        </div>
+        </header>
     );
 };
 

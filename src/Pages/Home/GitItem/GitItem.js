@@ -26,7 +26,7 @@ const GitItem = () => {
             data-aos='fade-zoom-in'
             data-aos-delay='50'
             data-aos-duration='1000'
-            className='container mx-auto  items-center mt-20 mb-20 '>
+            className='container mx-auto  items-center mt-[100px] overflow-x-hidden '>
 
             <Slider {...settings}>
 

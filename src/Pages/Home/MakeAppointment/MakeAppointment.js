@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import FCoffe from '../../../assets/images/FCoffe .png';
 
 import ico from '../../../assets/images/Ico.png'
@@ -8,43 +8,8 @@ import ic from '../../../assets/images/Ic.png'
 
 const MakeAppointment = () => {
 
-
-    const items = [
-        {
-            title: "1 Khadyo would like to discuss this controversial issue with our users, as we find ourselves at the crossroads of a systemic crisis that will produce profound structural changes in our economy.",
-            user: FCoffe,
-            price: "$4.00"
-        },
-        {
-            title: "2 Khadyo would like to discuss this controversial issue with our users, as we find ourselves at the crossroads of a systemic crisis that will produce profound structural changes in our economy.",
-            user: FCoffe,
-            price: "$5.50"
-        },
-        {
-
-            user: FCoffe,
-            price: "$5.00"
-        }
-    ]
-
-
-
-
-    const [setActiveIndex] = useState(0);
-
-    // Function to increment the active slide index
-    const nextSlide = () => {
-        setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
-    };
-
-    // Auto transition to the next slide every 5 seconds
-    useEffect(() => {
-        const interval = setInterval(nextSlide, 5000);
-        return () => clearInterval(interval);
-    },);
-
     return (
-        <div className=' mt-24  grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto mb-96'>
+        <div className=' mt-28  grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto mb-96'>
             <div className=' ml-20'>
                 <h1
                     data-aos="fade-up" data-aos-duration="1500"
