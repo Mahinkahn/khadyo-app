@@ -47,7 +47,7 @@ const Item = () => {
 
 
     return (
-        <div className=' flex mt-[100px] container mx-auto mr-10 overflow-x-hidden '
+        <div className=' flex mt-[100px] container mx-auto mr-10 '
 
         >
             <div className='mt-24 w-2/4 relative overflow-visible '>
@@ -92,7 +92,7 @@ const Item = () => {
                 data-aos="fade-left" data-aos-duration="1500"
                 className=' relative right-[420px] -mt-2'>
 
-                <div className="w-[760px] h-[505px] bg-[#FFE4C3] rounded-xl overflow-visible   ">
+                <div className="w-[760px] max-h-max bg-[#FFE4C3] rounded-xl py-3 overflow-hidden">
 
                     <div className='' >
 

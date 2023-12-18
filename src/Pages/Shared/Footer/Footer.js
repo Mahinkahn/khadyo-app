@@ -23,7 +23,7 @@ const Footer = () => {
     return (
         <footer
 
-            className="p-1 bg-[#F6D1A540] mt-[100px] overflow-x-hidden">
+            className="p-1 bg-[#F6D1A540] mt-[100px] ">
             <Helmet>
                 <link
                     rel="stylesheet"
@@ -151,7 +151,7 @@ const Footer = () => {
             </div>
 
             <div
-                data-aos="fade-up" data-aos-duration="1500"
+               
                 className='text-center font-semibold text-base mt-7 mb-4'>
                 <p>Copyright @ 2022 Khadyo</p>
             </div>
