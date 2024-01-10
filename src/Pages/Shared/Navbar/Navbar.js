@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import logo from '../../../assets/images/logo-12 1.png';
+import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -19,13 +20,14 @@ const Navbar = () => {
         };
     }, []);
 
-    const menuItems = <React.Fragment>
-        <li className=' text-white hover:text-slate-500 '><Link to="/">Home</Link></li>
-        <li className=' text-white hover:text-slate-500 '><Link to="#aboutus">About us</Link></li>
-        <li className=' text-white hover:text-slate-500'><Link to="#">Products</Link></li>
-        <li className=' text-white hover:text-slate-500 '><Link to="#">Contact</Link></li>
+    const navItems = [
+        { link: "Home", path: "home" },
+        { link: "Aboutus", path: "aboutus" },
+        { link: "Products", path: "products" },
+        { link: "Contact", path: "contact" },
+    ];
 
-    </React.Fragment>
+
 
     return (
 
@@ -58,7 +60,7 @@ const Navbar = () => {
                     </div>
                     <ul class="hom flex flex-col gap-8  mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0   dark:border-gray-700">
                         {
-                            menuItems
+                            navItems.map(({ link, path }) => <Link activeClass='active' spy={true} smooth={true} offset={-80} key={link} to={path} className='block hover:text-gray-300 text-blue-300 cursor-pointer'>{link}</Link>)
                         }
                     </ul>
                 </div>

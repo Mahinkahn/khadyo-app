@@ -84,7 +84,7 @@ const Testimonial = () => {
     ]
 
     return (
-        <section className=' mt-28 w-full h-[810px] px-5 relative overflow-visible ' style={{
+        <section className=' mt-28 w-full h-[810px] px-5 relative overflow-visible ' id='contact' style={{
             backgroundImage: `url(${Rec})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',

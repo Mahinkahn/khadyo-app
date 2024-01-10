@@ -26,7 +26,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
     return (
-        <section className='overflow-x-hidden'
+        <section className='overflow-x-hidden' id='home'
         >
             <div className=" hero " style={{
                 backgroundImage: `url(${Header})`,

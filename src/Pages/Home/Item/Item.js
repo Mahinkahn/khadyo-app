@@ -50,7 +50,7 @@ const Item = () => {
         <div className=' flex mt-[100px] container mx-auto mr-10 '
 
         >
-            <div className='mt-24 w-2/4 relative overflow-visible '>
+            <div className='mt-24 w-2/4  relative overflow-visible '>
                 <div className=' flex'>
                     <h1
                         data-aos="fade-down" data-aos-duration="1500"
